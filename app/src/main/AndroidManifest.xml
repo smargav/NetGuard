@@ -224,6 +224,7 @@
             <intent-filter android:priority="999">
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
                 <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+                <action android:name="io.fieldx.vpn.config" />
             </intent-filter>
         </receiver>
 
@@ -267,5 +268,8 @@
                 <action android:name="eu.faircode.netguard.LOCKDOWN_OFF" />
             </intent-filter>
         </receiver>
+
+        <service android:name=".NetguardService"
+            android:exported="true"/>
     </application>
 </manifest>

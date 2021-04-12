@@ -39,6 +39,10 @@ public class ReceiverAutostart extends BroadcastReceiver {
         Util.logExtras(intent);
 
         String action = (intent == null ? null : intent.getAction());
+        if("io.fieldx.vpn.config".equals(action)){
+            NetguardService.startUpdateService(context, intent.getData());
+            return;
+        }
         if (Intent.ACTION_BOOT_COMPLETED.equals(action) || Intent.ACTION_MY_PACKAGE_REPLACED.equals(action))
             try {
                 // Upgrade settings

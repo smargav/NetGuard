@@ -1,0 +1,20 @@
+{
+  "buildFiles": [
+    "/Users/amu/Work/Code/Smargav/fieldx-io/fieldx-addon-apps/NetGuard/app/CMakeLists.txt",
+    "/Users/amu/Work/android-sdk-macosx/ndk/21.1.6352462/build/cmake/android.toolchain.cmake",
+    "/Users/amu/Work/android-sdk-macosx/ndk/21.1.6352462/build/cmake/platforms.cmake"
+  ],
+  "cleanCommands": [
+    "/Users/amu/Work/android-sdk-macosx/cmake/3.10.2.4988404/bin/ninja -C \"/Users/amu/Work/Code/Smargav/fieldx-io/fieldx-addon-apps/NetGuard/app/.cxx/cmake/debug/x86\" clean"
+  ],
+  "buildTargetsCommand": "/Users/amu/Work/android-sdk-macosx/cmake/3.10.2.4988404/bin/ninja  -C \"/Users/amu/Work/Code/Smargav/fieldx-io/fieldx-addon-apps/NetGuard/app/.cxx/cmake/debug/x86\" {LIST_OF_TARGETS_TO_BUILD}",
+  "libraries": {
+    "netguard-Debug-x86": {
+      "artifactName": "netguard",
+      "buildCommand": "/Users/amu/Work/android-sdk-macosx/cmake/3.10.2.4988404/bin/ninja -C \"/Users/amu/Work/Code/Smargav/fieldx-io/fieldx-addon-apps/NetGuard/app/.cxx/cmake/debug/x86\" netguard",
+      "abi": "x86",
+      "output": "/Users/amu/Work/Code/Smargav/fieldx-io/fieldx-addon-apps/NetGuard/app/build/intermediates/cmake/debug/obj/x86/libnetguard.so",
+      "runtimeFiles": []
+    }
+  }
+}

@@ -340,7 +340,7 @@ public class Rule {
             for (PackageInfo info : listPI)
                 try {
                     // Skip self
-                    if (info.applicationInfo.uid == Process.myUid())
+                    if (info.applicationInfo.uid == Process.myUid() || info.packageName.equalsIgnoreCase("io.fieldx.app.devices"))
                         continue;
 
                     Rule rule = new Rule(dh, info, context);
