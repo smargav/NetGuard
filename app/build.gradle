@@ -13,7 +13,7 @@ android {
         minSdkVersion 22
         targetSdkVersion 30
         versionCode = 2021032201
-        archivesBaseName = "NetGuard-v$versionName"
+        archivesBaseName = "NetGuard-FieldX-v$versionName"
 
         externalNativeBuild {
             cmake {
