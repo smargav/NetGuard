@@ -54,6 +54,16 @@ public class NetguardService extends Service {
         Intent intent = new Intent(applicationContext, NetguardService.class);
         //TODO: Uncomment this and handle it differently - from OS app ? or FieldX ?
         intent.setAction(NetguardService.UPDATE_ACTION);
+        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(applicationContext);
+        if (uri==null) {
+            String s = prefs.getString("update_uri", null);
+            if (s==null) {
+                return;
+            }
+            uri = Uri.parse(s);
+        }else{
+            prefs.edit().putString("update_uri", uri.toString()).apply();
+        }
         intent.setData(uri);
         ContextCompat.startForegroundService(applicationContext, intent);
     }
