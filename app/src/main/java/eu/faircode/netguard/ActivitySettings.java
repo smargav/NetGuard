@@ -114,6 +114,7 @@ public class ActivitySettings extends AppCompatActivity implements SharedPrefere
         getFragmentManager().beginTransaction().replace(android.R.id.content, new FragmentSettings()).commit();
         getSupportActionBar().setTitle(R.string.menu_settings);
         running = true;
+        finish();
     }
 
     private PreferenceScreen getPreferenceScreen() {
